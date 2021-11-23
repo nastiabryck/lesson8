@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+<body>
+    <h1>Lesson 8. Images. Font Awesome. Basic animation</h1>
+    <div class="container">
+        <h2>Font Awesome + transition</h2>
+        <div class="block__first">
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Marvel</li>
+                <li><span class="fa-li"><i class="fa fa-spinner fa-pulse"></i></span> DC</li>
+                <li><span class="fa-li"><i class="far fa-square"></i></span> Starwars</li>
+            </ul>
+        </div>
+        <h2>Transform</h2>
+        <div class="block__second">
+            <div class="block__cube"></div>
+            <div class="block__cube"></div>
+            <div class="block__cube"></div>
+        </div>
+        <h2>CSS Background</h2>
+        <div class="img__bg"></div>
+        <h2>Images ( HTML Picture )</h2>
+        <picture>
+            <source srcset="marvel.jpg" media="(min-width: 1330px)">
+            <source srcset="dc.jpg" media="(min-width: 992px)">
+            <source srcset="starwars.jpg" media="(max-width: 992px)">
+            <img src="img/starwars.jpg" alt="">
+        </picture>
+        <h2>Universes (HTML object-fit )</h2>
+        <div class="universe__row">
+            <div class="universe__block">
+                <img src="starwars.png" alt="" class="row__object-fit">
+            </div>
+            <div class="universe__block">
+                <img src="dc.jpg" alt="" class="row__object-fit">
+            </div>
+            <div class="universe__block">
+                <img src="marvel.jpg" alt="" class="row__object-fit">
+            </div>
+        </div>
+        <h2>Universes in a row</h2>
+        <div class="universe__column">
+            <div class="universe__column_block">
+                <div class="universe__column__img">
+                    <img src="marvel.jpg" alt="" class="column__object-fit">
+                </div>
+                <div class="text">
+                    <h3>Marvel</h3>
+                    <p>Marvel was started in 1939 by Martin Goodman under a number of corporations and imprints but now known as Timely Comics, and by 1951 had generally become known as Atlas Comics. The Marvel era began in 1961, the year that the company launched The Fantastic Four and other superhero titles created by Stan Lee, Jack Kirby, Steve Ditko and many others. The Marvel brand, which had been used over the years, was solidified as the company's primary brand.</p>
+                </div>
+            </div>
+            <div class="universe__column_block">
+                <div class="universe__column__img">
+                    <img src="dc.jpg" alt="" class="column__object-fit">
+                </div>
+                <div class="text">
+                    <h3>DC</h3>
+                    <p>DC Comics is one of the largest and oldest American comic book companies, with their first comic under the DC banner being published in 1937.The majority of its publications take place within the fictional DC Universe and feature numerous culturally iconic heroic characters, such as Superman, Batman, and Wonder Woman.</p>
+                </div>
+            </div>
+            <div class="universe__column_block">
+                <div class="universe__column__img">
+                    <img src="starwars.png" alt="" class="column__object-fit">
+                </div>
+                <div class="text">
+                    <h3>Starwars</h3>
+                    <p>Star Wars was released on May 25, 1977, and first subtitled Episode IV: A New Hope in the 1979 book The Art of Star Wars.Episode V: The Empire Strikes Back was released on May 21, 1980, also achieving wide financial and critical success. The final film in the trilogy, Episode VI: Return of the Jedi was released on May 25, 1983.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
